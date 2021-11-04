@@ -27,6 +27,11 @@ li{
     padding: 10px 0px 20px 80px;
 }
 
+img{
+    width: 100px;
+    height: auto;
+}
+
 .wall{
     display: flex;
     min-height: 800px;
