@@ -29,6 +29,28 @@ li{
     font-family: 'Ubuntu', sans-serif;
 }
 
+a{
+    color: #312f44;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:visited{
+    color: #312f44;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color:#eb6f92;
+}
+
+a:active{
+    color: #ea9a97;
+}
+
 .plus{
     width: 38px;
     height: auto;
