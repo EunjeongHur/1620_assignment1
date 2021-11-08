@@ -11,6 +11,7 @@ nav{
 main{
     background-color: #faf4ed;
     flex-basis: 75%;
+    font-family: 'Bree Serif', serif;
 }
 
 ul{
@@ -25,6 +26,7 @@ li{
     display: flex;
     justify-content: center;
     padding: 10px 0px 20px 80px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .plus{
@@ -71,6 +73,7 @@ li{
     background-color: #fffaf3;
     border: 1px solid #555169;
     border-radius: 4px;
+    padding-top: 5px;
 }
 
 .one{
@@ -84,6 +87,7 @@ li{
     background-color: #fffaf3;
     border: 1px solid #555169;
     border-radius: 4px;
+    padding-top: 5px;
 }
 
 .two{
@@ -97,6 +101,7 @@ li{
     background-color: #fffaf3;
     border: 1px solid #555169;
     border-radius: 4px;
+    padding-top: 5px;
 }
 
 .email{
@@ -105,6 +110,7 @@ li{
     background-color: #fffaf3;
     border: 1px solid #555169;
     border-radius: 4px;
+    padding-top: 5px;
 }
 
 .three{
@@ -118,6 +124,8 @@ li{
     background-color: #9ccfd8;
     border: 1px solid #555169;
     border-radius: 4px;
+    text-align: center;
+    padding: 6px 0px 6px 0px;
 }
 
 .cancel{
@@ -126,6 +134,8 @@ li{
     background-color: #ebbcba;
     border: 1px solid #555169;
     border-radius: 4px;
+    text-align: center;
+    padding: 6px 0px 6px 0px;
 }
 
 .item1{
