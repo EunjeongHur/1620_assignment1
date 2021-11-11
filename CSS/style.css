@@ -6,6 +6,7 @@ header{
 
 nav{
     flex-grow:1;
+    justify-content: center;
 }
 
 main{
@@ -19,14 +20,16 @@ ul{
     list-style: none;
     flex-direction:column;
     position: fixed;
-    overflow: auto;
+    justify-content: space-evenly;
 }
 
 li{
     display: flex;
     justify-content: center;
-    padding: 10px 0px 20px 80px;
+    min-width: 280px;
+    padding: 20px;
     font-family: 'Ubuntu', sans-serif;
+    align-items: center;
 }
 
 a{
@@ -67,6 +70,7 @@ a:active{
     justify-content: start;
     padding-bottom: 25px;
     padding-left: 20px;
+    align-items: center;
 }
 
 .contact1{
@@ -236,10 +240,15 @@ a:active{
 #new_contact_container{
     width: 400px;
     display: grid;
-    margin: 80px 0px 0px 200px;
+    margin-top: 80px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px 40px 40px 40px 40px 40px;
     grid-gap: 20px;
+}
+
+#wrapper1{
+    display: flex;
+    justify-content: center;
 }
 
 #contact_container{
@@ -265,4 +274,87 @@ a:active{
 #profile{
     width: 100px;
     height: auto;
+}
+@media screen and (max-width: 1305px) {
+    #container{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            'one two three'
+            'four none none';
+        grid-gap: 10px;
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width: 1155px) {
+    header{
+        position: sticky;
+        top: 0;
+    }
+    
+    nav{
+        display: flex;
+    }
+
+    #contact_main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+
+    #contact_container{
+        grid-column: 2/3;
+        margin-left: 0px;
+    }
+
+    ul{
+        position: sticky;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    li{
+        flex-direction: row;
+        min-width:auto;
+        margin-right: 20px;
+
+    }
+
+    .homepage{
+        font-size: 1rem;
+    }
+
+
+    .wall{
+        display: block;
+        background-color: #faf4ed;
+        margin-top: -50px;
+    }
+
+    #wrapper1{
+        margin-left: 75px;
+    }
+    
+}
+
+@media screen and (max-width: 753px) {
+    #container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas:
+            'one'
+            'two'
+            'three' 
+            'four';
+        grid-gap: 10px;        
+    }
+
+    #container div{
+        width: 350px;
+        height: 200px;
+    }
+    
 }
