@@ -48,10 +48,11 @@ a:visited{
 a:hover{
     text-decoration: underline;
     color:#eb6f92;
+    font-weight: bold;
 }
 
 a:active{
-    color: #ea9a97;
+    color: #2a2837;
 }
 
 .plus{
@@ -200,7 +201,7 @@ a:active{
 .item6{
     grid-column: 1/2;
     grid-row: 5/6;
-    background-color: #31748f;
+    background-color: #286983;
     border-radius: 4px;
     max-width: 80px;
     min-height: 20px;
@@ -212,7 +213,7 @@ a:active{
 .item7{
     grid-column: 2/3;
     grid-row: 5/6;
-    background-color: #907aa9;
+    background-color: #575279;
     text-align: center;
     border-radius: 4px;
     color: #eee9e6;
@@ -275,6 +276,7 @@ a:active{
     width: 100px;
     height: auto;
 }
+
 @media screen and (max-width: 1305px) {
     #container{
         grid-template-columns: 1fr 1fr 1fr;
@@ -285,7 +287,6 @@ a:active{
         grid-gap: 10px;
         justify-content: center;
     }
-    
 }
 
 @media screen and (max-width: 1155px) {
@@ -298,18 +299,6 @@ a:active{
         display: flex;
     }
 
-    #contact_main{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-    }
-
-
-    #contact_container{
-        grid-column: 2/3;
-        margin-left: 0px;
-    }
-
     ul{
         position: sticky;
         flex-direction: row;
@@ -320,13 +309,11 @@ a:active{
         flex-direction: row;
         min-width:auto;
         margin-right: 20px;
-
     }
 
     .homepage{
         font-size: 1rem;
     }
-
 
     .wall{
         display: block;
@@ -337,7 +324,17 @@ a:active{
     #wrapper1{
         margin-left: 75px;
     }
-    
+
+    #contact_main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    #contact_container{
+        grid-column: 2/3;
+        margin-left: 0px;
+    }   
 }
 
 @media screen and (max-width: 753px) {
